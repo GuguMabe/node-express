@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Visitor Form</title>
+</head>
+
+<body>
+    <h1>Visitor information</h1>
+    <h3>please fill in the form</h3>
+    <form id="visitor-info" method="POST" action="/addNewVisitor">
+        <label>Enter visitor name</label><br />
+        <input type="text" name="visitorname" required /><br />
+        <label>Enter visitor age</label><br />
+        <input type="number" name="visitorage" min="17" required /><br />
+        <label>Enter date of visit name</label><br />
+        <input type="date" name="date" required /><br />
+        <label>Enter time of visit</label><br />
+        <input type="time" name="time" required /><br />
+        <label>Enter assistant name</label><br />
+        <input type="text" name="assistantname" required /><br />
+        <label>Enter comments</label><br />
+        <textarea name="comments" id="" cols="30" rows="10" required></textarea>
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+
+</html>
